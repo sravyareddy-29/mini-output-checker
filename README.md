@@ -14,7 +14,6 @@ This project provides a simple trust-analysis layer that evaluates text using a 
 
 The goal is not to determine factual truth, but to identify signals that suggest the output may require human review.
 
----
 
 ## API Endpoints
 
@@ -63,7 +62,6 @@ Response:
 }
 ```
 
----
 
 ## Trust Checks Implemented
 
@@ -81,7 +79,7 @@ Why it matters:
 
 AI systems often generate authoritative-looking statistics without citing a source.
 
----
+
 
 ### 2. Confidence-Evidence Mismatch
 
@@ -97,7 +95,7 @@ Why it matters:
 
 Overconfident statements can make unreliable information appear trustworthy.
 
----
+
 
 ### 3. Citation Illusion
 
@@ -113,7 +111,7 @@ Why it matters:
 
 AI-generated content sometimes references studies or sources that are vague, incomplete, or unverifiable.
 
----
+
 
 ## Trust Score Calculation
 
@@ -129,7 +127,7 @@ Verdicts are assigned as follows:
 | 50 - 79     | review     |
 | Below 50    | suspicious |
 
----
+
 
 ## Project Structure
 
@@ -153,7 +151,7 @@ output-checker/
 └── .gitignore
 ```
 
----
+
 
 ## Running Locally
 
@@ -187,7 +185,7 @@ Open Swagger UI:
 http://127.0.0.1:8000/docs
 ```
 
----
+
 
 ## Running Tests
 
@@ -201,7 +199,7 @@ Current result:
 3 passed
 ```
 
----
+
 
 ## Design Decisions
 
@@ -215,7 +213,7 @@ The implemented checks target three common AI failure modes:
 * Confidence without evidence
 * Unverifiable references
 
----
+
 
 ## AI Usage Reflection
 
